@@ -8,5 +8,5 @@
     android:paddingLeft="15dp"
     android:paddingTop="10dp"
     android:text="新闻条目"
-    android:textColor="#FF000000"
+    android:textColor="#F44336"
     android:textSize="16dp" />
