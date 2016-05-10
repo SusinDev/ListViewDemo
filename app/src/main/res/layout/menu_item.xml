@@ -7,6 +7,6 @@
     android:paddingBottom="10dp"
     android:paddingLeft="15dp"
     android:paddingTop="10dp"
-    android:text="新闻条目"
+    android:text="条目"
     android:textColor="#F44336"
     android:textSize="16dp" />
