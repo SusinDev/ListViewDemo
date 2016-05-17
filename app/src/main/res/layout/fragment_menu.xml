@@ -38,6 +38,22 @@
 
     </LinearLayout>
 
+
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFDE7"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:text="首页"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="80dp"
+        />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -48,7 +64,9 @@
         <ListView
             android:id="@+id/listview_menu"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none"/>
 
     </LinearLayout>
 
