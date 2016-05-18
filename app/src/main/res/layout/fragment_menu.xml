@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -34,27 +36,9 @@
             android:textColor="#ffffff"
             android:padding="8dp"
             android:textSize="15sp"/>
-
-
     </LinearLayout>
 
-
-    <TextView
-        android:id="@+id/tv_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFDE7"
-        android:textColor="#000000"
-        android:gravity="center_vertical"
-        android:text="首页"
-        android:textSize="18sp"
-        android:paddingTop="10dp"
-        android:paddingBottom="2dp"
-        android:paddingLeft="80dp"
-        />
-
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="7"
@@ -68,7 +52,14 @@
             android:divider="@android:color/transparent"
             android:scrollbars="none"/>
 
-    </LinearLayout>
+        <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/rotateloading"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:loading_width="5dp"
+            app:loading_color="@color/colorAccent"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
 
 </LinearLayout>

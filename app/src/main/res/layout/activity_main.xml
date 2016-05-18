@@ -55,16 +55,30 @@
                     <ListView
                         android:id="@+id/point_listview"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="350dp"
                         android:paddingTop="10dp"
                         android:dividerHeight="@dimen/activity_horizontal_margin"
                         android:divider="@android:color/transparent"/>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/enter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="进入首页"
+                            android:textSize="20sp"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="5dp"/>
+                    </LinearLayout>
                 </LinearLayout>
             </FrameLayout>
 
         </android.support.v4.widget.SwipeRefreshLayout>
     </LinearLayout>
+
 
     <fragment
         android:id="@+id/fragment_menu"

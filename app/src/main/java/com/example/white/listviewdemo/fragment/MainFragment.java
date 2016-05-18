@@ -1,5 +1,6 @@
 package com.example.white.listviewdemo.fragment;
 
+import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,9 +11,18 @@ import android.view.ViewGroup;
 import com.example.white.listviewdemo.R;
 
 /**
- * Created by white on 2016/5/17.
+ * Created by white on 2016/5/18.
  */
-public class MainFragmetn extends Fragment {
+@SuppressLint("ValidFragment")
+public class MainFragment extends Fragment {
+
+    private String urlId;
+    private String name;
+
+    public MainFragment(String id, String name) {
+        urlId = id;
+        this.name = name;
+    }
 
     @Nullable
     @Override
