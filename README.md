@@ -1,0 +1,6 @@
+# ListViewDemo
+
+自定义一个fragment作为DrawerLayout的侧滑栏，在这个fragment中显示一个listview，
+listview的item使用知乎日报的api，获取知乎日报的中侧滑烂的item，使用了async—http
+异步获取网络数据，使用fastjson解析json数据，使用sqlite数据库保存item的json数据。
+当点击listview中的item时，会切换到各自的frament。
